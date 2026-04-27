@@ -66,8 +66,6 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🔄 Workflow
 
-
-
 1\. Prometheus collects real-time system metrics  
 
 2\. Metrics are preprocessed and fed into the LSTM model  
@@ -112,9 +110,15 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## ▶️ How to Run
 
-
-
-```bash
-
 bash experiments/run\_hari\_pipeline.sh
+
+
+
+\---
+
+
+
+\## 👨‍💻 Author
+
+HARISH (PES1PG24CS025)
 
