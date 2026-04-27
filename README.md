@@ -1,5 +1,3 @@
-@"
-
 \# AI-Based Predictive Autoscaling for Kubernetes Workloads
 
 
@@ -66,8 +64,6 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🔄 Workflow
 
-
-
 1\. Prometheus collects real-time metrics  
 
 2\. Metrics are processed and fed to LSTM model  
@@ -110,8 +106,6 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## ▶️ How to Run
 
-
-
 bash experiments/run\_hari\_pipeline.sh
 
 
@@ -123,6 +117,4 @@ bash experiments/run\_hari\_pipeline.sh
 \## 👨‍💻 Author
 
 HARISH (PES1PG24CS025)
-
-"@ > README.md
 
