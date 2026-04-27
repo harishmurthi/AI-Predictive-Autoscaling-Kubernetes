@@ -1,0 +1,7 @@
+=== Runtime Validation Summary ===
+t_burst_start: 15.0
+t_pred_scale: 15.0
+t_hpa_scale: 30.0
+predictive_delay: 0.0
+hpa_delay: 15.0
+claim_supported: True

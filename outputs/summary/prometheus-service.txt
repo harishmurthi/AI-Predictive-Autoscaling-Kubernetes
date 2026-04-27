@@ -1,0 +1,2 @@
+NAME                TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)   AGE
+prometheus-server   ClusterIP   10.111.55.166   <none>        80/TCP    33d

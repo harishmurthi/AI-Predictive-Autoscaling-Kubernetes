@@ -1,0 +1,73 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: predictive-autoscaler
+  namespace: autoscale-demo
+  labels:
+    app: predictive-autoscaler
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: predictive-autoscaler
+  template:
+    metadata:
+      labels:
+        app: predictive-autoscaler
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: ccbd-h110m4-c43
+      tolerations:
+        - key: node-role.kubernetes.io/control-plane
+          operator: Exists
+          effect: NoSchedule
+      serviceAccountName: predictive-autoscaler
+      containers:
+        - name: autoscaler
+          image: hari053/predictive-autoscaler:latest
+          imagePullPolicy: Always
+          command: ["python", "app/main.py"]
+          env:
+            - name: PROMETHEUS_URL
+              value: "http://prometheus-server.monitoring.svc.cluster.local"
+            - name: NAMESPACE
+              value: "autoscale-demo"
+            - name: DEPLOYMENT_NAME
+              value: "cpu-demo"
+            - name: MODEL_PATH
+              value: "models/offline_lstm_model.h5"
+            - name: LOOP_INTERVAL_SECONDS
+              value: "5"
+            - name: COOLDOWN_SECONDS
+              value: "8"
+            - name: UP_THRESHOLD
+              value: "70"
+            - name: DOWN_THRESHOLD
+              value: "30"
+            - name: SCALE_UP_MARGIN
+              value: "18"
+            - name: BURST_RPS_DELTA_THRESHOLD
+              value: "2"
+            - name: ABSOLUTE_BURST_RPS_THRESHOLD
+              value: "10"
+            - name: BURST_SCALE_STEP
+              value: "3"
+            - name: MAX_SCALE_UP_STEP
+              value: "5"
+            - name: COOLDOWN_BYPASS_MARGIN
+              value: "4"
+            - name: SCALE_DOWN_STREAK_REQUIRED
+              value: "3"
+            - name: CPU_RATE_WINDOW
+              value: "15s"
+            - name: REQUEST_RATE_WINDOW
+              value: "30s"
+            - name: REQUEST_RATE_QUERY
+              value: 'sum(rate(container_network_receive_packets_total{namespace="autoscale-demo",pod=~"cpu-demo.*",interface="eth0"}[30s]))'
+          resources:
+            requests:
+              cpu: "200m"
+              memory: "256Mi"
+            limits:
+              cpu: "1"
+              memory: "1Gi"

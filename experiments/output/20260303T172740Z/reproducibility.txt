@@ -1,0 +1,19 @@
+=== Environment ===
+Linux ccbd-H110M4-C43 6.8.0-101-generic #101~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Feb 11 13:19:54 UTC  x86_64 x86_64 x86_64 GNU/Linux
+
+Python 3.10.12
+Docker version 28.2.2, build 28.2.2-0ubuntu1~22.04.1
+Client Version: v1.30.14
+Kustomize Version: v5.0.4-0.20230601165947-6ce0bf390ce3
+
+=== Cluster Context ===
+kubernetes-admin@kubernetes
+NAME              STATUS   ROLES           AGE     VERSION    INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+ccbd-h110m4-c43   Ready    control-plane   6h33m   v1.30.14   10.10.3.155   <none>        Ubuntu 22.04.5 LTS   6.8.0-101-generic   containerd://1.7.28
+ccbd-worker-158   Ready    <none>          6h26m   v1.30.14   10.10.3.158   <none>        Ubuntu 22.04.5 LTS   6.8.0-101-generic   containerd://1.7.28
+
+=== Workload Config ===
+LOAD_DURATION_SEC=180
+SAMPLE_INTERVAL_SEC=5
+LOCUST_USERS=120
+LOCUST_SPAWN_RATE=30

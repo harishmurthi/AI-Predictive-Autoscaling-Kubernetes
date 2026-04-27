@@ -1,0 +1,14 @@
+2026-03-03 17:27:55.972577: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 17:27:55.979770: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 17:27:56.083566: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-03 17:27:57.908879: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-03-03 17:27:59,504 INFO [model_loader] Loaded model from models/offline_lstm_model.h5 with input shape=(None, 10, 4) (timesteps=10, features=4)
+2026-03-03 17:27:59,507 INFO [scaler] Loaded in-cluster Kubernetes config
+2026-03-03 17:27:59,507 INFO [__main__] Starting predictive autoscaler for autoscale-demo/cpu-demo with interval=30s cooldown=60s
+2026-03-03 17:27:59,577 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:27:59,594 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:27:59,613 INFO [data_collector] Collected metrics: cpu=96.81% memory=0.00% req_rate=0.000 rps replicas=8
+2026-03-03 17:27:59,613 INFO [predictor] Warmup mode: 1/10 points collected. Using current CPU as prediction.
+2026-03-03 17:27:59,727 WARNING [scaler] Scaling action=scale_up deployment=autoscale-demo/cpu-demo replicas=9 reason=predicted_cpu=96.81% > 70.00%
+2026-03-03 17:27:59,771 INFO [__main__] Loop summary actual_cpu=96.81 predicted_cpu=96.81 action=scale_up replicas=9 hpa=8

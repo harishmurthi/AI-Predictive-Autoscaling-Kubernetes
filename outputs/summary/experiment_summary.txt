@@ -1,0 +1,10 @@
+Predictive < HPA: YES
+Telemetry quality: request-rate present and usable
+Key observations:
+- Baseline and predictive runs used the same burst/idle workload profile.
+- Validation results are recorded in /home/ccbd/AIPREDICTIVE/predictive/hari/summary/summary.txt.
+- Metrics are recorded in /home/ccbd/AIPREDICTIVE/predictive/hari/metrics/metrics.json.
+Notes for paper writing:
+- Use the validator verdict directly; do not claim proactive scaling if claim_supported=False.
+- Check predictive_autoscaler.log for first burst timing and request-rate source before writing conclusions.
+- If docker push was skipped or failed, results reflect the existing cluster image tag, not an unpublished local build.

@@ -1,0 +1,16 @@
+2026-03-03 18:27:40.173383: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 18:27:40.180186: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 18:27:40.305353: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-03 18:27:42.304184: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-03-03 18:27:44,085 INFO [model_loader] Loaded model from models/offline_lstm_model.h5 with input shape=(None, 10, 4) (timesteps=10, features=4)
+2026-03-03 18:27:44,088 INFO [scaler] Loaded in-cluster Kubernetes config
+2026-03-03 18:27:44,088 INFO [__main__] Starting predictive autoscaler for autoscale-demo/cpu-demo with interval=30s cooldown=60s
+2026-03-03 18:27:44,106 WARNING [data_collector] No result for query: 100 * sum(rate(container_cpu_usage_seconds_total{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}[2m])) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="cpu",unit="core"})
+2026-03-03 18:27:44,226 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 18:27:44,304 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 18:27:44,324 INFO [data_collector] Collected metrics: cpu=0.00% memory=0.00% req_rate=0.000 rps replicas=12
+2026-03-03 18:27:44,327 INFO [predictor] Warmup mode: 1/10 points collected. Using current CPU as prediction.
+2026-03-03 18:27:44,418 WARNING [scaler] Scaling action=scale_down deployment=autoscale-demo/cpu-demo replicas=11 reason=effective_cpu=0.00% (pred=0.00%) < 30.00%
+2026-03-03 18:27:44,434 INFO [__main__] Loop summary actual_cpu=0.00 predicted_cpu=0.00 action=scale_down replicas=11 hpa=None
+2026-03-03 18:27:44,434 INFO [__main__] Decision details: actual_cpu=0.00 predicted_cpu=0.00 scale_up_threshold=70.00 scale_down_threshold=30.00 current_replicas=12 decision_reason=effective_cpu=0.00% (pred=0.00%) < 30.00%

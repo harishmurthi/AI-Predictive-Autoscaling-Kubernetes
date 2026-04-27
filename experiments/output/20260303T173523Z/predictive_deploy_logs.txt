@@ -1,0 +1,57 @@
+2026-03-03 17:31:35.921892: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 17:31:35.926203: I external/local_tsl/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-03-03 17:31:35.977635: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-03-03 17:31:37.073389: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2026-03-03 17:31:37,866 INFO [model_loader] Loaded model from models/offline_lstm_model.h5 with input shape=(None, 10, 4) (timesteps=10, features=4)
+2026-03-03 17:31:37,867 INFO [scaler] Loaded in-cluster Kubernetes config
+2026-03-03 17:31:37,867 INFO [__main__] Starting predictive autoscaler for autoscale-demo/cpu-demo with interval=30s cooldown=60s
+2026-03-03 17:31:37,877 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:31:37,880 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:31:37,895 INFO [data_collector] Collected metrics: cpu=27.78% memory=0.00% req_rate=0.000 rps replicas=1
+2026-03-03 17:31:37,895 INFO [predictor] Warmup mode: 1/10 points collected. Using current CPU as prediction.
+2026-03-03 17:31:37,908 INFO [scaler] No scaling action: predicted_cpu=27.78% < 30.00%
+2026-03-03 17:31:37,918 INFO [__main__] Loop summary actual_cpu=27.78 predicted_cpu=27.78 action=hold replicas=1 hpa=None
+2026-03-03 17:32:07,875 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:32:07,877 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:32:07,883 INFO [data_collector] Collected metrics: cpu=11.86% memory=0.00% req_rate=0.000 rps replicas=1
+2026-03-03 17:32:07,883 INFO [predictor] Warmup mode: 2/10 points collected. Using current CPU as prediction.
+2026-03-03 17:32:07,889 INFO [scaler] No scaling action: predicted_cpu=11.86% < 30.00%
+2026-03-03 17:32:07,891 INFO [__main__] Loop summary actual_cpu=11.86 predicted_cpu=11.86 action=hold replicas=1 hpa=None
+2026-03-03 17:32:37,872 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:32:37,874 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:32:37,880 INFO [data_collector] Collected metrics: cpu=65.09% memory=0.00% req_rate=0.000 rps replicas=1
+2026-03-03 17:32:37,880 INFO [predictor] Warmup mode: 3/10 points collected. Using current CPU as prediction.
+2026-03-03 17:32:37,885 INFO [scaler] No scaling action: predicted_cpu=65.09% within [30.00%, 70.00%]
+2026-03-03 17:32:37,888 INFO [__main__] Loop summary actual_cpu=65.09 predicted_cpu=65.09 action=hold replicas=1 hpa=None
+2026-03-03 17:33:07,877 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:33:07,879 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:33:07,884 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps replicas=1
+2026-03-03 17:33:07,884 INFO [predictor] Warmup mode: 4/10 points collected. Using current CPU as prediction.
+2026-03-03 17:33:07,949 WARNING [scaler] Scaling action=scale_up deployment=autoscale-demo/cpu-demo replicas=2 reason=predicted_cpu=100.00% > 70.00%
+2026-03-03 17:33:07,952 INFO [__main__] Loop summary actual_cpu=100.00 predicted_cpu=100.00 action=scale_up replicas=2 hpa=None
+2026-03-03 17:33:37,870 WARNING [data_collector] No result for query: 100 * sum(rate(container_cpu_usage_seconds_total{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}[2m])) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="cpu",unit="core"})
+2026-03-03 17:33:37,873 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:33:37,875 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:33:37,881 INFO [data_collector] Collected metrics: cpu=0.00% memory=0.00% req_rate=0.000 rps replicas=2
+2026-03-03 17:33:37,881 INFO [predictor] Warmup mode: 5/10 points collected. Using current CPU as prediction.
+2026-03-03 17:33:37,886 INFO [scaler] No scaling action: cooldown
+2026-03-03 17:33:37,890 INFO [__main__] Loop summary actual_cpu=0.00 predicted_cpu=0.00 action=hold replicas=2 hpa=None
+2026-03-03 17:34:07,873 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:34:07,874 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:34:07,881 INFO [data_collector] Collected metrics: cpu=49.98% memory=0.00% req_rate=0.000 rps replicas=2
+2026-03-03 17:34:07,882 INFO [predictor] Warmup mode: 6/10 points collected. Using current CPU as prediction.
+2026-03-03 17:34:07,888 INFO [scaler] No scaling action: cooldown
+2026-03-03 17:34:07,897 INFO [__main__] Loop summary actual_cpu=49.98 predicted_cpu=49.98 action=hold replicas=2 hpa=None
+2026-03-03 17:34:37,872 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:34:37,874 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:34:37,879 INFO [data_collector] Collected metrics: cpu=34.74% memory=0.00% req_rate=0.000 rps replicas=2
+2026-03-03 17:34:37,879 INFO [predictor] Warmup mode: 7/10 points collected. Using current CPU as prediction.
+2026-03-03 17:34:37,884 INFO [scaler] No scaling action: predicted_cpu=34.74% within [30.00%, 70.00%]
+2026-03-03 17:34:37,887 INFO [__main__] Loop summary actual_cpu=34.74 predicted_cpu=34.74 action=hold replicas=2 hpa=None
+2026-03-03 17:35:07,873 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:35:07,874 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:35:07,880 INFO [data_collector] Collected metrics: cpu=98.76% memory=0.00% req_rate=0.000 rps replicas=2
+2026-03-03 17:35:07,880 INFO [predictor] Warmup mode: 8/10 points collected. Using current CPU as prediction.
+2026-03-03 17:35:07,917 WARNING [scaler] Scaling action=scale_up deployment=autoscale-demo/cpu-demo replicas=3 reason=predicted_cpu=98.76% > 70.00%
+2026-03-03 17:35:07,920 INFO [__main__] Loop summary actual_cpu=98.76 predicted_cpu=98.76 action=scale_up replicas=3 hpa=None

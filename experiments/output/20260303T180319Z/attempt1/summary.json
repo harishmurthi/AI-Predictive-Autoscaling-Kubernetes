@@ -1,0 +1,27 @@
+{
+  "prediction_rmse": 27.25305145843235,
+  "prediction_mae": 21.58206346153846,
+  "prediction_mape": 35.08968536797511,
+  "hpa_replica_seconds": 3637.0,
+  "predictive_replica_seconds": 3240.0,
+  "resource_savings_percent": 10.915589771789938,
+  "hpa_scaleup_reaction_seconds": 11.0,
+  "predictive_scaleup_reaction_seconds": 58.0,
+  "scaling_lead_time_seconds_hpa_minus_predictive": -47.0,
+  "hpa_scale_up_events": 3,
+  "hpa_scale_down_events": 0,
+  "predictive_scale_up_events": 11,
+  "predictive_scale_down_events": 2,
+  "workload_config": {
+    "burst_duration_sec": 120,
+    "idle_duration_sec": 120,
+    "experiment_duration_sec": 480,
+    "sample_interval_sec": 5,
+    "locust_users": 300,
+    "locust_spawn_rate": 120,
+    "locustfile": "locust/locustfile.py"
+  },
+  "image": "hari053/predictive-autoscaler:latest",
+  "image_digest": "sha256:1f4335d47d4c892b1d6d92a0f9482a7ccc27685f6078433a2bdf9acafa6d5ea4",
+  "scientifically_valid": true
+}

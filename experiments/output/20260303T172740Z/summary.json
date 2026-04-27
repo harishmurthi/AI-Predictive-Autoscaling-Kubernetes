@@ -1,0 +1,20 @@
+{
+  "prediction_rmse": 0.0,
+  "prediction_mae": 0.0,
+  "prediction_mape": 0.0,
+  "hpa_replica_seconds": 1276.0,
+  "predictive_replica_seconds": 252.0,
+  "resource_savings_percent": 80.25078369905955,
+  "hpa_scaleup_reaction_seconds": 16.0,
+  "predictive_scaleup_reaction_seconds": 102.0,
+  "scaling_lead_time_seconds_hpa_minus_predictive": -86.0,
+  "workload_config": {
+    "duration_sec": 180,
+    "sample_interval_sec": 5,
+    "locust_users": 120,
+    "locust_spawn_rate": 30,
+    "locustfile": "locust/locustfile.py"
+  },
+  "image": "hari053/predictive-autoscaler:latest",
+  "image_digest": "sha256:73e42781dc41fb68028ad211c47f1f0e028f75d41c94d536ead72d9cc43e79f4"
+}

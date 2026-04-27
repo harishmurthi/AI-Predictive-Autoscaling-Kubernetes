@@ -1,0 +1,9 @@
+{
+  "predictive_delay": 15.252206,
+  "hpa_delay": 31.0,
+  "delay_difference": 15.747794,
+  "max_cpu_hpa": 154.0,
+  "max_cpu_predictive": 3.068,
+  "replica_seconds_hpa": 633.0,
+  "replica_seconds_predictive": 4163.957074000001
+}

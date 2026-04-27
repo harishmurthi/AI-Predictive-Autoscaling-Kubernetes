@@ -1,0 +1,3 @@
+NAME              STATUS   ROLES           AGE   VERSION    INTERNAL-IP   EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
+ccbd-h110m4-c43   Ready    control-plane   33d   v1.30.14   10.10.3.155   <none>        Ubuntu 22.04.5 LTS   6.8.0-106-generic   containerd://1.7.28
+ccbd-worker-158   Ready    <none>          33d   v1.30.14   10.10.3.158   <none>        Ubuntu 22.04.5 LTS   6.8.0-106-generic   containerd://1.7.28

@@ -1,0 +1,5 @@
+rmse: 0.0000
+mae: 0.0000
+mape: 0.0000
+resource_savings_percent: 0.0000
+latency_reduction_percent: 0.0000

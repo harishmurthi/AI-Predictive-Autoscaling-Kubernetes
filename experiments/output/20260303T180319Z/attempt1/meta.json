@@ -1,0 +1,13 @@
+{
+  "image": "hari053/predictive-autoscaler:latest",
+  "image_digest": "sha256:1f4335d47d4c892b1d6d92a0f9482a7ccc27685f6078433a2bdf9acafa6d5ea4",
+    "workload_config": {
+    "burst_duration_sec": 120,
+    "idle_duration_sec": 120,
+    "experiment_duration_sec": 480,
+    "sample_interval_sec": 5,
+    "locust_users": 300,
+    "locust_spawn_rate": 120,
+    "locustfile": "locust/locustfile.py"
+  }
+}

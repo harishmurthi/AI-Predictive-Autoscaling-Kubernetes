@@ -1,0 +1,12 @@
+=== Research Summary ===
+RMSE: 0.0000
+MAE: 0.0000
+MAPE: 0.0000%
+HPA replica-seconds: 1276.00
+Predictive replica-seconds: 252.00
+Resource savings: 80.25%
+HPA scale-up reaction: 16.00s
+Predictive scale-up reaction: 102.00s
+Scaling lead time (HPA - Predictive): -86.00s
+Scientifically valid for report: NO
+Reason: insufficient data points and/or missing measurable scale-up events.

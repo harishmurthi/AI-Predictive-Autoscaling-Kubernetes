@@ -1,0 +1,300 @@
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:06:04,090 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:06:04,092 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:06:04,092 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:06:04,092 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:06:34,089 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:06:34,091 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:06:34,091 INFO [data_collector] Collected metrics: cpu=60.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:06:34,092 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:07:04,088 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:07:04,090 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:07:04,090 INFO [data_collector] Collected metrics: cpu=99.99% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:07:04,090 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:07:34,089 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:07:34,092 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:07:34,092 INFO [data_collector] Collected metrics: cpu=59.18% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:07:34,092 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:08:04,089 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:08:04,091 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:08:04,091 INFO [data_collector] Collected metrics: cpu=99.99% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:08:04,091 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:08:34,089 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:08:34,091 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:08:34,091 INFO [data_collector] Collected metrics: cpu=19.99% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:08:34,092 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:09:04,091 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:09:04,092 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:09:04,092 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:09:04,092 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:09:34,090 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:09:34,091 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:09:34,091 INFO [data_collector] Collected metrics: cpu=39.99% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:09:34,091 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:10:04,094 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:10:04,096 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:10:04,096 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:10:04,097 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:10:34,092 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:10:34,094 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:10:34,094 INFO [data_collector] Collected metrics: cpu=66.55% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:10:34,094 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:11:04,091 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:11:04,094 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:11:04,095 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:11:04,095 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:11:34,093 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:11:34,095 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:11:34,095 INFO [data_collector] Collected metrics: cpu=60.01% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:11:34,095 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:12:04,093 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:12:04,094 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:12:04,094 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:12:04,095 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:12:34,094 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:12:34,095 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:12:34,096 INFO [data_collector] Collected metrics: cpu=84.30% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:12:34,096 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:13:04,095 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:13:04,097 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:13:04,097 INFO [data_collector] Collected metrics: cpu=99.99% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:13:04,097 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:13:34,096 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:13:34,098 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:13:34,098 INFO [data_collector] Collected metrics: cpu=40.82% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:13:34,098 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:14:04,095 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:14:04,097 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:14:04,098 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:14:04,098 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:14:34,094 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:14:34,096 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:14:34,096 INFO [data_collector] Collected metrics: cpu=25.76% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:14:34,097 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:15:04,094 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:15:04,096 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:15:04,096 INFO [data_collector] Collected metrics: cpu=99.99% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:15:04,096 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:15:34,093 WARNING [data_collector] No result for query: 100 * sum(rate(container_cpu_usage_seconds_total{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}[2m])) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="cpu",unit="core"})
+2026-03-03 17:15:34,095 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:15:34,097 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:15:34,098 INFO [data_collector] Collected metrics: cpu=0.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:15:34,098 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
+2026-03-03 17:16:04,095 WARNING [data_collector] No result for query: 100 * sum(container_memory_working_set_bytes{namespace="autoscale-demo",pod=~"cpu-demo.*",container!="POD",container!=""}) / sum(kube_pod_container_resource_limits{namespace="autoscale-demo",pod=~"cpu-demo.*",resource="memory",unit="byte"})
+2026-03-03 17:16:04,097 WARNING [data_collector] No result for query: sum(rate(http_requests_total{namespace="autoscale-demo",pod=~"cpu-demo.*"}[1m]))
+2026-03-03 17:16:04,097 INFO [data_collector] Collected metrics: cpu=100.00% memory=0.00% req_rate=0.000 rps
+2026-03-03 17:16:04,097 ERROR [__main__] Main loop iteration failed
+Traceback (most recent call last):
+  File "/app/app/main.py", line 134, in run
+    prediction = predictor.update_and_predict(snapshot)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/predictor.py", line 55, in update_and_predict
+    input_tensor = self.model_handler.to_window_tensor(self.history)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/app/model_loader.py", line 78, in to_window_tensor
+    raise ValueError(
+ValueError: Feature mismatch. model expects 4, got 3
