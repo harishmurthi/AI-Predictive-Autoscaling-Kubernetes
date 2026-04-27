@@ -88,21 +88,19 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \### HPA vs Predictive Scaling
 
-!\[Scaling](replica\_comparison.png)
+!\[Scaling](https://github.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/blob/main/replica\_comparison.png?raw=true)
 
 
 
 \### CPU Prediction vs Actual
 
-!\[CPU](prediction\_vs\_actual.png)
+!\[CPU](https://github.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/blob/main/prediction\_vs\_actual.png?raw=true)
 
 
 
 \### Resource Usage Comparison
 
-!\[Resource](cpu\_comparison.png)
-
-\---
+!\[Resource](https://github.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/blob/main/cpu\_comparison.png?raw=true)---
 
 
 
