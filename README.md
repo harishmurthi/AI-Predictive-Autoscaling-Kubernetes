@@ -8,7 +8,7 @@ This project implements an intelligent autoscaling system using LSTM-based time 
 
 
 
-Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, whereas this system predicts future workload and scales proactively.
+Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, whereas this system predicts future workload and scales proactively, improving performance and resource utilization.
 
 
 
@@ -30,15 +30,15 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## ⚙️ Technologies Used
 
-\- Python
+\- Python  
 
-\- Kubernetes
+\- Kubernetes  
 
-\- Prometheus
+\- Prometheus  
 
-\- LSTM (Deep Learning)
+\- LSTM (Deep Learning)  
 
-\- Docker
+\- Docker  
 
 
 
@@ -48,13 +48,15 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🚀 Key Features
 
-\- Predictive autoscaling using LSTM
+\- Predictive autoscaling using LSTM  
 
-\- Burst-aware scaling
+\- Burst-aware scaling mechanism  
 
-\- Real-time monitoring using Prometheus
+\- Real-time monitoring using Prometheus  
 
-\- Automated pipeline execution
+\- Automated pipeline execution  
+
+\- Comparison with traditional HPA  
 
 
 
@@ -64,13 +66,17 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🔄 Workflow
 
-1\. Prometheus collects real-time metrics
 
-2\. Metrics are processed and fed to LSTM model
 
-3\. LSTM predicts future CPU usage
+1\. Prometheus collects real-time system metrics  
 
-4\. Autoscaler adjusts replicas proactively
+2\. Metrics are preprocessed and fed into the LSTM model  
+
+3\. LSTM predicts future CPU usage  
+
+4\. Autoscaler adjusts the number of pods proactively  
+
+5\. System performance is evaluated and visualized  
 
 
 
@@ -98,21 +104,17 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 !\[Resource](https://raw.githubusercontent.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/main/outputs/graphs/cpu\_comparison.png)
 
+
+
 \---
 
 
 
 \## ▶️ How to Run
 
+
+
+```bash
+
 bash experiments/run\_hari\_pipeline.sh
-
-
-
-\---
-
-
-
-\## 👨‍💻 Author
-
-HARISH (PES1PG24CS025)
 
