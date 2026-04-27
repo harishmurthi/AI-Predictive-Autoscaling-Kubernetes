@@ -64,13 +64,13 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🔄 Workflow
 
-1\. Prometheus collects real-time metrics  
+1\. Prometheus collects real-time metrics
 
-2\. Metrics are processed and fed to LSTM model  
+2\. Metrics are processed and fed to LSTM model
 
-3\. LSTM predicts future CPU usage  
+3\. LSTM predicts future CPU usage
 
-4\. Autoscaler adjusts replicas proactively  
+4\. Autoscaler adjusts replicas proactively
 
 
 
@@ -82,23 +82,21 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 
 
-\### CPU Prediction vs Actual
-
-!\[CPU](outputs/graphs/prediction\_vs\_actual.png)
-
-
-
 \### HPA vs Predictive Scaling
 
-!\[Scaling](outputs/graphs/replica\_comparison.png)
+!\[Scaling](https://raw.githubusercontent.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/main/outputs/graphs/replica\_comparison.png)
+
+
+
+\### CPU Prediction vs Actual
+
+!\[CPU](https://raw.githubusercontent.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/main/outputs/graphs/prediction\_vs\_actual.png)
 
 
 
 \### Resource Usage Comparison
 
-!\[Resource](outputs/graphs/cpu\_comparison.png)
-
-
+!\[Resource](https://raw.githubusercontent.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/main/outputs/graphs/cpu\_comparison.png)
 
 \---
 
