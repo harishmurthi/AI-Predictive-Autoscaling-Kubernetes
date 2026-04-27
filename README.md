@@ -30,15 +30,15 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## ⚙️ Technologies Used
 
-\- Python
+\- Python  
 
-\- Kubernetes
+\- Kubernetes  
 
-\- Prometheus
+\- Prometheus  
 
-\- LSTM (Deep Learning)
+\- LSTM (Deep Learning)  
 
-\- Docker
+\- Docker  
 
 
 
@@ -48,15 +48,15 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🚀 Key Features
 
-\- Predictive autoscaling using LSTM
+\- Predictive autoscaling using LSTM  
 
-\- Burst-aware scaling mechanism
+\- Burst-aware scaling mechanism  
 
-\- Real-time monitoring using Prometheus
+\- Real-time monitoring using Prometheus  
 
-\- Automated pipeline execution
+\- Automated pipeline execution  
 
-\- Comparison with traditional HPA
+\- Comparison with traditional HPA  
 
 
 
@@ -66,15 +66,15 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \## 🔄 Workflow
 
-1\. Prometheus collects real-time system metrics
+1\. Prometheus collects real-time system metrics  
 
-2\. Metrics are preprocessed and fed into the LSTM model
+2\. Metrics are preprocessed and fed into the LSTM model  
 
-3\. LSTM predicts future CPU usage
+3\. LSTM predicts future CPU usage  
 
-4\. Autoscaler adjusts the number of pods proactively
+4\. Autoscaler adjusts the number of pods proactively  
 
-5\. System performance is evaluated and visualized
+5\. System performance is evaluated and visualized  
 
 
 
@@ -100,13 +100,7 @@ Traditional Kubernetes Horizontal Pod Autoscaler (HPA) reacts to current load, w
 
 \### Resource Usage Comparison
 
-!\[Resource](https://github.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/blob/main/cpu\_comparison.png?raw=true)---
-
-
-
-\## ▶️ How to Run
-
-bash experiments/run\_hari\_pipeline.sh
+!\[Resource](https://github.com/harishmurthi/AI-Predictive-Autoscaling-Kubernetes/blob/main/cpu\_comparison.png?raw=true)
 
 
 
@@ -114,7 +108,11 @@ bash experiments/run\_hari\_pipeline.sh
 
 
 
-\## 👨‍💻 Author
+\## ▶️ How to Run
 
-HARISH (PES1PG24CS025)
+
+
+```bash
+
+bash experiments/run\_hari\_pipeline.sh
 
